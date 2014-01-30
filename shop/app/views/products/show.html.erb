@@ -1,0 +1,26 @@
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<a href="/products"><img src="http://static2.wikia.nocookie.net/__cb20101115221814/robocop/images/8/82/OCP.jpg" alt="OCP"></a>
+	<h1>All Products</h1>
+
+	<% @products.each do |p| %>
+		<table>
+
+			<tr>
+				<th>Name:</th>
+				<th>Price:</th>
+				<th>Description:</th>
+			</tr>
+			<tr>
+				<td><%= p[:name].capitalize %></td>
+				<td>$<%= p[:price] %></td>
+				<td><%= p[:description].capitalize %></td>
+			</tr>
+		</table><br>
+	<% end %>
+
+</body>

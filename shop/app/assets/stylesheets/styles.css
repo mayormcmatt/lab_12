@@ -1,0 +1,20 @@
+img {
+	height: 15%;
+	width:15%;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+html {
+	background: #bad191;
+}
+
+h1 {
+	font-family: 'Audiowide', Verdana;
+	margin-left: 50px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+}

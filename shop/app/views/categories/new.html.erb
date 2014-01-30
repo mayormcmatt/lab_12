@@ -1,0 +1,17 @@
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<a href="/products"><img src="http://static2.wikia.nocookie.net/__cb20101115221814/robocop/images/8/82/OCP.jpg" alt="OCP"></a>
+	
+	<h1>Create New Category</h1>
+	<div class="form">
+		<%=form_for :new_category, url: "/categories" do |f| %>
+		<div class="form_field"><%= f.text_field :name, placeholder: "Category Name" %></div>
+		<div class="submit"><%=f.submit "Enter Product" %></div>
+		<% end %>
+	</div>
+
+</body>
